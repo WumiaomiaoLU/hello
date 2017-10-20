@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>登录</title>
+		
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="jquery.mobile-1.4.5/jQuery.js"></script>
+		<script src="jquery.mobile-1.4.5/jquery-2.2.2.js"></script>
+		<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<style>
+		#con{
+			background-image: url(images/02.jpg);
+			background-size: 140% 140%;
+		}
+		#dm{
+			margin-top: 220px;
+		}
+		#l1{
+			margin-top: 20px;
+		}
+		#l2{
+			margin-top: 20px;
+		}
+		.box{
+			width: 90%;
+			margin: 0 auto;
+		}
+	</style>
+	<body>
+		
+		<div data-role='page' id="con" >
+			<div class="box">
+				<img src="images/01.jpg" style="width: 60px; height: 60px;float: left;margin-top:150px ;
+					border-radius: 50%;"/> 
+			</div>
+			<div>
+				<h1 style="color: white;float: left;margin-left: 5px; margin-top: 155px;">QQ</h1>
+			</div>
+				
+			
+			<div id="dm" class="box">
+				<div id="l1" >
+					<input type="text"  placeholder="QQ号/手机号/邮箱" id="ID">
+				</div>	
+				<div id="l2">
+					<input type="text" placeholder="密码" id="psw">
+				</div>
+			</div>
+			
+			
+			<div class="box">
+				<a href="#" data-role='button' style="background-color: dodgerblue;color: white;margin-top: 20px;" id="but">登录</a>
+				<a style="float: left;color: dodgerblue;">忘记密码？</a>
+				<a style="float: right;color: dodgerblue;">新用户注册</a>
+			</div>
+		
+	</div>
+	</body>
+	<script>
+		var id=document.getElementById('ID');
+		var psw=document.getElementById('psw');
+		
+		$('#but').click(function(){
+				$.ajax({
+					type:'get',
+					url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+					data:{status:'login',userID:id.value,
+					password:psw.value
+					},
+					dataType:'json',
+					success:function(data){
+						console.log(data);
+						if(data==0){
+							alert("用户名不存在，点击注册");							 
+						    location.href='signup.html';
+						}
+						else if(data==2){
+							alert("用户名密码不符");
+							location.href="signin.html"
+						}
+						else{
+						location.href='QQmsg.html';}
+						
+					},
+					error:function(){						
+						console.log('wrong!')
+					}
+				})	
+			})
+	</script>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>消息</title>
+		
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="jquery.mobile-1.4.5/jQuery.js"></script>
+		<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			/*.ui-icon-circle{
+				width: 30px;
+				height: 30px;
+				background-image: url(01/images/img1.jpg);
+			}*/
+			.ii{
+				border-radius: 50%;
+				width: 60px;
+				height:60px;
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+			#search{
+				width: 100%;
+				text-align: center;
+			}
+			#ullist{
+				margin-top: -1px;
+			}
+			#img{
+				 width: 35px; 
+				 height: 35px;
+				 border-radius: 50%;
+				 margin-top: 2px;
+			}
+		</style>
+		<script>
+			$(document).on('pagecreate','#pageone',function(){
+				$('#ullist').on('taphold','li',function(){
+					$('#ullist').prepend($(this));
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div data-role='page' id="pageone">
+			<div data-role='header' data-theme='b'>
+				<a href="#" data-role="none"><img src="images/01.jpg" id="img"/></a>
+				<h1>消息</h1>
+				<a href="#" data-role='button' data-icon='plus' data-iconpos="notext"></a>
+			</div>
+			
+			<div data-role='content'>
+				<div data-role='fieldcontain' style="margin-top:-15px; width: 100%;">
+					<label for="search" class="ui-hidden-accessible">搜索</label>
+					<input type="search" name="search" id="search" value="搜索"/>
+				</div>
+				<ul data-role='listview' id="ullist" data-icon="false">
+					<li>
+						<a><img src="images/img1.jpg" 
+							style="	border-radius: 50%;
+									width: 60px;
+									height:60px;
+									margin-top: 10px;
+									margin-left: 5px;
+								" />
+							<h1>软件学院15级7班<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p>今天下午0点在学院206开会</p>
+							
+						</a>
+					</li>
+					<li>
+						<a><img src="images/img2.jpg" class="ii" />
+							<h1>666<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p>许我们的心里藏有一个海洋，流出来的却是两行清泪，可我并不感到孤单，我只是简单地喜欢书写凄凉。</p>
+						</a>
+						
+					</li>
+					<li>
+						<a><img src="images/img3.jpg" class="ii" />
+							<h1>小仙女<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p> 曾经我们也有过如海子一般“面朝大海，春暖花开”的美好愿景</p>
+						</a>
+					</li>
+					<li>
+						<a><img src="images/img4.jpg" class="ii" />
+							<h1>篮球队<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p>回首似水流年，内心莫名的宁静，也许是我们的心慢慢变老渐渐远离年轻。</p>
+						</a>
+						
+					</li>
+					<li>
+						<a><img src="images/01.jpg" class="ii" />
+							<h1>过不去的曾经<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p> 秋雨丝丝洒枝头，烟缕织成愁，遥望落花满地残红，曾也枝头盈盈娉婷，装饰他人梦。如今花落簌簌，曾绚烂美好刹那芳华。</p>
+						</a>
+						
+					</li>
+					<li>
+						<a><img src="images/02.jpg" class="ii" />
+							<h1>欢乐小分队<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p>故作神游，忍不住躺在了油菜花里，生活中所有的烦恼都不存在了</p>
+						</a>
+						
+					</li>
+					<li>
+						<a><img src="images/03.jpg" class="ii" />
+							<h1>软件学院<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p>今天下午1点开会</p>
+						</a>
+						
+					</li>
+					<li>
+						<a><img src="images/04.jpg" class="ii" />
+							<h1>软件学院<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p>今天下午1点开会</p>
+						</a>
+						
+					</li>
+					
+					
+					<li>
+						<a><img src="images/03.jpg" style="	border-radius: 50%;
+									width: 60px;
+									height:60px;
+									margin-top: 10px;
+									margin-left: 5px;
+								" / />
+							<h1>软件学院<span style="float: right;font-weight:normal;color: gray;font-size: 14px;">15:20</span></h1>
+							<p>今天下午2点开会</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role='footer' data-position='fixed' data-theme='b'>
+				<div data-role='navbar'>
+					<ul>
+						<li><a href="#" data-icon='comment' data-iconpos='top' class="foo">消息</a></li>
+						<li><a href="#" data-icon='phone' data-iconpos='top' class="foo">消息</a></li>
+						<li><a href="#" data-icon='star' data-iconpos='top' class="foo">消息</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
