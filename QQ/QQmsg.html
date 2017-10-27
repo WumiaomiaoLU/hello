@@ -33,11 +33,41 @@
 			#ullist{
 				margin-top: -1px;
 			}
-			#img{
+			.img{
 				 width: 35px; 
 				 height: 35px;
 				 border-radius: 50%;
 				 margin-top: 2px;
+			}
+			
+			#pa{
+				color: white;
+				background-color: black;
+				font-family: "仿宋";
+				
+			}
+			a{
+				text-decoration: none;
+			}
+			h2{
+				color: white;
+				margin-left: 45px;
+				margin-top: -35px;
+			}
+			h3{
+				color: white;
+				margin-top: -36px;
+			}
+			.pah{
+				margin-left: 50px;
+				line-height: 45px;
+			}
+			.pii{
+				
+				width: 20px;
+				height:20px;
+				margin-top: 10px;
+				margin-left: 5px;
 			}
 		</style>
 		<script>
@@ -46,12 +76,70 @@
 					$('#ullist').prepend($(this));
 				})
 			})
+			
+		//	滑动		$('#pageone').on('swiperight',$('#ca').click());
+			
 		</script>
 	</head>
 	<body>
 		<div data-role='page' id="pageone">
+		<!--控制面板-->
+			<div data-role='panel' id="pa" data-display='reveal'>
+				<!--打卡-->
+				<span><img src="images/02.jpg" style="width: 20px; height: 20px;"><p style="margin-left: 25px;margin-top: -25px;">打卡</p></span>
+				<div style="margin-top: 20px;">
+					<!--返回列表页-->
+					<a href="#pageone" data-rel="close" >
+						<img src="images/01.jpg" class="img" ><h2>淼淼兮 于怀</h2>
+					</a>
+					<p>★★★</p>
+					<h4>我们也有过如海子一般“面朝大海...</h4>
+				</div>
+				<!--列表-->
+				<ul style="margin-top: 30px;list-style: none;">
+					<li>
+						<a><img  src="images/movie-9.png" class="pii"/> </a>
+						<h3 class="pah" data-icon='search'>了解会员特权</h3>
+					</li>
+					<li>
+						<a><img img src="images/movie7.png" class="pii"/>
+							<h3 class="pah">QQ钱包</h3> </a>
+						
+					</li>
+					<li>
+						<a><img img src="images/movie-6.png" class="pii"/> 
+							<h3 class="pah">个性装扮</h3>
+						</a>
+						
+					</li>
+					<li>
+						<a><img img src="images/movie-8.png" class="pii" />
+						<h3 class="pah">我的收藏</h3> 
+						</a>
+						
+					</li>
+					<li>
+						<a><img img src="images/movie-9.png" 
+							class="pii"/><h3 class="pah">我的相册</h3> </a>
+						
+					</li>
+					<li>
+						<a><img img src="images/movie-9.png" class="pii"/> 
+							<h3 class="pah">我的文件</h3></a>
+						
+					</li>
+					<li>
+						<a><img img src="images/gw.png" class="pii" />
+						<h3 class="pah">免流量特权</h3> 
+						</a>
+						
+					</li>
+				</ul>
+				<div style="margin-top: 120px;"><img src="images/movie-9.png" style="width: 20px;height: 20px; float: left;"/> <a style="float: left;color: white;">设置</a></div>
+			</div>
+			
 			<div data-role='header' data-theme='b'>
-				<a href="#" data-role="none"><img src="images/01.jpg" id="img"/></a>
+				<a href="#pa" data-role="none" id="ca"><img src="images/01.jpg" class="img"/></a>
 				<h1>消息</h1>
 				<a href="#" data-role='button' data-icon='plus' data-iconpos="notext"></a>
 			</div>
