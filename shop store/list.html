@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>列表</title>
+		
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script src="js/jQuery.js"></script>
+		<script src="js/jquery-2.2.2.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/rem.js"></script>
+		
+		<script src="js/iscroll.js"></script>
+		<script src="js/jquery.1.11.3.min.js"></script>
+		<script src="js/navbarscroll.js"></script>
+		
+		<link rel="stylesheet" href="css/list.css"></link>
+	</head>
+	<!--
+    	作者：635077363@qq.com
+    	时间：2017-11-29
+    	描述：商品列表
+    -->
+    
+	<body>
+		<div data-role="page" id="page1">
+			<!--导航栏-->
+			<div data-role="header" data-theme="f" style="height:1rem">
+				<a data-role="none"><img src="images/t3.png" style="width: 0.8rem;height: 0.8rem;border-radius: 0.5rem;"></a>
+				<div id="search"><input type="search" id="psearch"  placeholder="搜索" style="border-radius: 0.5rem;font-size: 0.28rem;"/></div>
+				<a id="ser" data-role="none" style="color: black;margin-top: 0.2rem;font-size: 0.4rem;">搜索</a>
+			</div>			
+				
+			<!--内容部分-->
+			<div id="content">
+				<div class="wrapper" id="wrap">
+					<div class="scroller">
+						<ul>
+							<li><a>热销</a></li>
+							<li><a id="class1">衬衫</a></li>
+							<li><a id="class2">礼服</a></li>
+							<li><a id="class3">短外套</a></li>
+							<li><a id="class4">棉服</a></li>
+							<li><a id="class5">卫衣</a></li>
+						</ul>	
+					</div>
+				</div>
+				
+				<div class="ui-grid-a" id="goodList">
+				<!--列表内容-->	
+				</div>
+			
+			<!--低栏-->
+			<div data-role="footer" data-position="fixed" style="height:1rem;background-color:white;">  <!-- data-theme="f"该不该加上-->
+				<div id="bar">
+					<ul>
+						<li><a href="#"><img src="images/yellow-27.png" width="30%" height="30%"></br>主页</a></li>
+						<li><a href="" ><img src="images/mail.png" width="30%" height="30%"></br>消息</a></li>
+						<li><a id="shoppingCar" rel="external"><img src="images/shc (2).png" width="53%" height="53%"></br>购物车</a></li>
+						<li><a id="user" rel="external"><img src="images/yellow-35.png" width="30%" height="30%"></br>我的</a></li>
+					</ul>
+				</div>	  
+				
+			</div>
+		</div>
+		
+	</body>
+	<!--
+    	作者：635077363@qq.com
+    	时间：2017-11-30
+    	描述：接口引用
+    -->
+    <script src="js/list.js"></script>
+</html>

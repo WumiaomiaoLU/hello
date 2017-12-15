@@ -1,0 +1,14 @@
+#con{
+			background-image:url(../images/bg1.png) ;
+		}
+		#dm{
+			margin-top: 250px;
+		}
+		.ll{
+			margin-top: 20px;
+		}
+		
+		.box{
+			width: 90%;
+			margin: 0 auto;
+		}

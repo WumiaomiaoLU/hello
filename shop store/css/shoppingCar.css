@@ -1,0 +1,111 @@
+*{
+			padding:0;
+			margin:0;
+		}
+		#rf{
+			font-size:0.4rem;
+			color:white;
+			text-decoration: none;
+			margin-top: 0.2rem;
+		}
+		#wholeChose{
+			width: 100%;
+			height: 1rem;
+		}
+		#chose{
+			float: left;
+			height: 1rem;
+			width: 50%;
+		}
+		#radio-choice-1{
+			float: left;
+			margin-left: 0.1rem;
+			margin-top: 0.35rem;
+		}
+		
+		#fl{
+			float: left;
+			margin-left: 0.15rem;
+			margin-top: 0.25rem;
+		}
+		#sum{
+			float: left;
+			width: 50%;
+			height: 1rem;
+			font-size: 0.3rem;
+		}
+		#money{
+			width: 50%;
+			margin-top: 0.25rem;
+			font-weight: lighter;
+			float: left;
+		}
+		#buy{
+			width: 50%;
+			height: 1rem;
+			background-color: orange;
+			float: left;
+			text-align: center;
+		}
+		/*底栏样式*/
+		#bar{
+			width: 100%;
+			height: 1rem;
+			
+		}
+		#bar ul{
+			height: 1rem;
+			font-size: 0.3rem;
+			list-style: none;
+			text-align: center;
+		}
+		#bar ul li{
+			float: left;
+			width: 25%;
+			
+		}
+		#bar ul li a{
+			color: orange;
+		}
+		
+		/*复选框部分样式*/
+		#check{
+			padding: 0;
+			margin: 0;
+			width: 100%;
+		}
+		#checkbox{
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 0;
+		}
+		#info{
+			
+			width: 100%;
+		}
+		.checkpic{
+			width: 30%;
+			height: 2rem;
+			float: left;
+		}
+		.checkp{
+			width: 60%;
+			float: left;
+			font-size: 0.3rem;
+			margin-left: 40%;
+			margin-top: -1.8rem;
+		}
+		
+		.imgpos{
+			width: 8%;
+			float: right;
+			margin-top: -0.5rem;
+			
+		}
+		.box{
+			width: 5%;
+			margin-top: 1rem;
+			float: left;
+			
+		}

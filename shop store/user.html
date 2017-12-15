@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>用户</title>
+		
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script src="js/jQuery.js"></script>
+		<script src="js/jquery-2.2.2.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/rem.js"></script>
+		
+		<link rel="stylesheet" href="css/user.css" />
+	</head>
+	
+	<body>
+		<!--返回箭头-->
+		<div style="font-size: 0.4rem;">
+			<a href="list.html" rel="external" style="color: black;text-decoration: none;"><img src="images/left.png" width="6%" height="6%" style="margin-top: 0.2rem;margin-left: 0.2rem;"/>&nbsp;&nbsp;设置</a>
+		</div>
+		
+		<!--用户信息-->
+		<div id="userinfo">
+			<img id="img" src="images/user.jpg" />
+			<p id="username">你好！旧时光</p>
+			<p style="font-size: 0.3rem;">会员名：wmm19970306</p>
+		</div>
+		
+		<!--分割线-->
+		<hr color="gainsboro" width="100%"/>
+		
+			
+		<!--基本信息-->
+		<div >
+			<ul data-role="listview" id="fs"class="ui-nodisc-icon">
+				<li><a>我的收货地址</a></li>
+				<li><a>账户与安全</a></li>
+				<li><a>地址设置</a></li>
+				<li><a>音效与通知</a></li>
+				<li><a>隐私</a></li>
+				<li><a>通用</a></li>
+				<li><a>我的小蜜</a></li>
+				<li><a>关于手机淘宝</a></li>
+			</ul>
+			
+		</div>
+		
+			
+		<!--退出按钮-->
+		<div data-role="footer" data-position="fixed" style=":width:100%">
+			<a id="out" data-role="button" style="margin: 0;width:86%;height:0.6rem;color:white;font-size:0.5rem;border-color: lightsalmon;background-color:orange;">退出当前账户</a>
+		</div>
+	</body>
+	<script src="js/user.js"></script>
+</html>

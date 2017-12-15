@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>购物车</title>
+		
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.2.2.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/rem.js"></script>
+		
+		<link rel="stylesheet" href="css/shoppingCar.css" />
+	</head>
+	
+	<script src="js/shoppingCar1.js"></script>
+	
+	<body>
+		<div data-role="page">
+			<!--头部-->
+			<div data-role="header" style="height: 1rem; background-color: orange;">
+				<h1 style="font-size: 0.5rem;color:white;margin-top: -0.15rem;">购物车</h1>
+				<a href=""id="rf" class="ui-btn-right" data-role="none">管理</a>
+			</div>
+			<!--购物车列表-->
+			<div data-role="content" id="check">
+				<!--复选框-->
+				<div data-role="fieldcontain" id="checkbox">
+				    <fieldset data-role="controlgroup" id="info">
+					 	<!--<input type="checkbox" id="chose"/>
+					 	<label for="chose">
+					 		<img class="checkpic" src="images/00.jpg"/>
+					 		<p class="checkp">梦妆花簇净白水乳洗面奶套装</p>
+					 		<p class="checkm">45</p>
+					 		<img src="images/trash (2).png" class="imgpos"/>
+					 	</label>
+					 	
+					 	<input type="checkbox" id="chose1"/>
+					 	<label for="chose1">
+					 		<img class="checkpic" src="images/00.jpg"/>
+					 		<p class="checkp">梦妆花簇净白水乳洗面奶套装</p>
+					 		<p class="checkm">45</p>
+					 		<img src="images/trash (2).png" class="imgpos"/>
+					 	</label>-->
+		
+					</fieldset>
+				</div>
+				
+			</div>
+			
+			<!--底栏-->
+			<div data-role="footer" data-position="fixed" style="height: 2rem;">
+				<!--全选按钮-->
+				<div id="wholeChose">
+					<div id="chose">
+						<input data-role="none" type="checkbox" id="radio-choice-1" onClick="if(this.checked==true) { checkAll('productId');heji(); } else { clearAll('productId'); }"/>
+						<label for="radio-choice-1" id="fl">全选</label> 
+					</div>
+					<div id="sum">
+						<div id="money">合计：<span id="heji"></span></div>
+						<div id="buy"><div style="margin-top: 0.3rem;color: white;font-weight: lighter;">结算</div></div>
+					</div>
+				</div>
+				<div id="bar">
+					<ul>
+						<li><a href="list.html" rel="external"><img src="images/yellow-27.png" width="30%" height="30%"></br>主页</a></li>
+						<li><a href="" ><img src="images/mail.png" width="30%" height="30%"></br>消息</a></li>
+						<li><a href="#" ><img src="images/shc (2).png" width="53%" height="53%"></br>购物车</a></li>
+						<li><a href="user.html" rel="external"><img src="images/yellow-35.png" width="30%" height="30%"></br>我的</a></li>
+					</ul>
+				</div>	  
+				
+
+			</div>
+		</div>
+	</body>
+	<script src="js/shoppingCar2.js"></script>
+	
+</html>

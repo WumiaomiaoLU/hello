@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>商品详情</title>
+		
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<script src="js/jquery-2.2.2.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/rem.js"></script>
+		
+		<link rel="stylesheet" href="css/goodsInf.css" />
+	</head>
+	
+	<body>
+		<div data-role="page">
+			<!--商品图片-->
+			<div id="image"></div>
+			
+			<!--介绍-->
+			<div id="bb">
+				<div id="ppos"><p class="fs" id="info"></p></div>
+				<div id="dpos"><img src="images/shc.png" style="width: 0.5rem; height: 0.5rem;"/></br><h>分享有赏</h></div></br>
+				<div id="price"></div>
+				<div style="margin-top: 0.2rem;"><p class="hs">快递：免运费</p><p class="hs">月销261笔</p><p class="hs">山东青岛</p></div>
+				
+			</div>
+			<!--优惠券-->
+			<div style="margin-top: 0.7rem;">
+				<ul data-role="listview">
+					<li><a style="font-size: 0.25rem;" class="ui-nodisc-icon">10元店铺优惠券</br>5元店铺优惠券</a></li>
+					<li><a style="font-size: 0.25rem;" class="ui-nodisc-icon">7天无理由退货  15天内发货</a></li>
+					<li><a style="font-size: 0.25rem;" class="ui-nodisc-icon">选择颜色分类</a></li>
+					<li><a style="font-size: 0.25rem;" class="ui-nodisc-icon" >产品参数</a>
+						<a href="#" class="ui-nodisc-icon" data-rel="dialog"  data- transition="pop"><p id="can"></p></a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--评价-->
+			<div style="margin: 0.2rem 0 ;"><p style="text-align: center;font-size: 0.25rem;">评价</p></div>
+			
+			<div style="margin-top: 0.2rem;">
+				<ul data-role="listview" data-icon="false">
+					<li><a style="font-size: 0.25rem;" class="ui-nodisc-icon">宝贝评价</a></li>
+					<li><a style="font-size: 0.25rem;" class="ui-nodisc-icon">
+						<img src="images/0.jpg"  style="border-radius: 50%;
+											width: 0.5rem;
+											height:0.5rem;
+											margin-top: 0.2rem;
+											margin-left: 0.2rem;" />
+						<h1 style="margin-left: -0.6rem;">唯**棉</h1>
+						<p style="margin-left: -1.3rem;font-size: 0.2rem;">我是预定的时候买的。今天就变成原价购买了，看来我还是挺机智的。</p>
+					</a></li>
+					<li><a style="font-size: 0.25rem;" class="ui-nodisc-icon">
+						<img src="images/0.jpg"  style="border-radius: 50%;
+											width: 0.5rem;
+											height:0.5rem;
+											margin-top: 0.2rem;
+											margin-left: 0.2rem;" />
+						<h1 style="margin-left: -0.6rem;">唯**棉</h1>
+						<p style="margin-left: -1.3rem;font-size: 0.2rem;">我是预定的时候买的。今天就变成原价购买了，看来我还是挺机智的。</p>
+					</a></li>
+					<a data-role="button" style="width: 30%;font-size:0.25rem;border-color: lightsalmon;color: lightsalmon; margin: 0.2rem auto; border-radius: 0.5rem;">更多评价</a>
+				</ul>
+			</div>
+			
+			<!--分割线<hr color="gainsboro"/>-->
+			
+			<!--问大家-->
+			<div style="margin-top: 0.2rem;">
+				<ul data-role="listview" data-icon="false" >
+					<li><a style="font-size: 0.3rem;">问大家</a></li>
+					<li><a style="font-size: 0.25rem;">
+						<h1>实物跟图片差距大吗</h1>
+						<p style="color: gray;">1个回答</p>
+					</a></li>
+					<li><a style="font-size: 0.25rem;">
+						<h1>穿上会不会显黑</h1>
+						<p style="color: gray;">10个回答</p>
+					</a></li>
+					<a data-role="button" style="width: 30%;font-size:0.25rem;border-color: lightsalmon;color: lightsalmon; margin: 0.2rem auto; border-radius: 0.5rem;">查看全部问题</a>
+				
+				</ul>
+			</div>
+			
+			<!--底栏-->
+			<div data-role="footer" data-position="fixed";style="height: 1rem;"> 
+				<ul style="text-align: center;">
+					<li style="width: 13.3%;float: left;margin-top: -0.35rem;">
+						<a href="list.html" rel="external"><img src="images/shc.png" width="50%" /></a>
+						<p style="font-size: 0.25rem;margin-top: -0.25rem;">店铺</p>
+					</li>
+					<li style="width: 13.3%;float: left;margin-top: -0.35rem;">
+						<img src="images/kf2.jpg"  width="50%"/>
+						<p style="font-size: 0.25rem;margin-top: -0.25rem;">客服</p>
+					</li>
+					<li style="width: 13.3%;float: left;margin-top: -0.35rem;">
+						<img src="images/star.jpg"  width="50%"/>
+						<p style="font-size: 0.25rem;margin-top: -0.25rem;">收藏</p>
+					</li>
+					<li style="width: 30%;float: left;background-color: orange;height: 1rem;">
+						<div id="shoppingCar" style="font-size: 0.3rem;color:ghostwhite;margin-top:0.35rem;">加入购物车</div>
+					</li>
+					<li style="width: 30%;float: left;background-color: red;height: 1rem;">
+						<div id="buy" style="font-size: 0.3rem;color:ghostwhite;margin-top:0.35rem;">立即购买</div>
+					</li>
+				</ul>
+			</a>
+		</div>
+		
+	</body>
+	<script src="js/goodsInf.js"></script>
+</html>
